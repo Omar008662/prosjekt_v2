@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - IronCore</title>
+    <link rel="stylesheet" href="/Css/Style.css">
+</head>
+
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">IRONCORE</div>
+            <ul class="nav-links">
+                <li><a href="/Python_webbutikk/templates/index.html">Hjem</a></li>
+                <li><a href="/Python_webbutikk/templates/produkter.html">Produkter</a></li>
+                <li><a href="/Python_webbutikk/templates/OmOss.html">Om oss</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+            <a href="checkout.html"><button class="cart-btn">🛒</button></a>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <h1>Kontakt oss</h1>
+            <p class="sub-text">Har du spørsmål om produkter, bestilling eller samarbeid? Ta kontakt!</p>
+
+            <div class="contact-content">
+                
+                <div class="contact-info">
+                    <h2>IronCore Support</h2>
+                    <p><strong>E-post:</strong> support@ironcore.no</p>
+                    <p><strong>Telefon:</strong> +47 45 34 12 98</p>
+                    <p><strong>Adresse:</strong> Styrkeveien 15, 0580 Oslo</p>
+                    
+                    <h3>Åpningstider</h3>
+                    <p>Man-Fre: 09:00-18:00<br>Lørdag: 11:00-17:00<br>Søndag: Stengt</p>
+                </div>
+
+                <form class="contact-form">
+                    <label for="navn">Navn</label>
+                    <input type="text" id="navn" placeholder="Ditt navn" required>
+
+                    <label for="email">E-post</label>
+                    <input type="email" id="email" placeholder="Din e-post" required>
+
+                    <label for="melding">Melding</label>
+                    <textarea id="melding" rows="5" placeholder="Skriv din melding her..." required></textarea>
+
+                    <button type="submit" class="send-btn">Send melding</button>
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 IronCore. Alle rettigheter reservert.</p>
+    </footer>
+
+</body>
+</html>
