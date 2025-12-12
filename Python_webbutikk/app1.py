@@ -5,7 +5,7 @@ app = Flask(__name__)
 app.secret_key = "superhemmelig"
 
 #dette er en test
-
+#test2
 def init_db():
     conn = sqlite3.connect("produkter.db")
     c = conn.cursor()
