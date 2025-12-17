@@ -31,9 +31,14 @@ PRODUKTER = [
 def index():
     return render_template("index.html")  
 
+
 @app.route("/OmOss")
 def om_oss():
     return render_template("OmOss.html")
+
+@app.route("/Kontakt")
+def Kontakt():
+    return render_template("Kontakt.html")
 
 
 @app.route("/produkter", methods=["GET", "POST"])
@@ -76,7 +81,7 @@ def bestill():
     session["handlekurv"] = []
     return redirect("/produkter")
 
-@app.route("/oversikt")
+@app.route("/checkout")
 def oversikt():
     conn = sqlite3.connect("produkter.db")
     c = conn.cursor()
@@ -88,8 +93,8 @@ def oversikt():
     """)
     bestillinger = c.fetchall()
     conn.close()
-    return render_template("oversikt.html", bestillinger=bestillinger)
+    return render_template("checkout.html", bestillinger=bestillinger)
 
 if __name__ == "__main__":
     init_db()
-    app.run(debug=True)
+    app.run(debug=True, host="0.0.0.0")

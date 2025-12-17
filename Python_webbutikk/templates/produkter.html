@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produkter - IronCore</title>
-    <link rel="stylesheet" href="/Css/Style.css">
+    <link rel="stylesheet" href="../static/css/Style.css">
    
 </head>
 <body>
@@ -13,12 +13,12 @@
         <nav class="navbar">
             <div class="logo">IRONCORE</div>
             <ul class="nav-links">
-                <li><a href="/Python_webbutikk/templates/index.html">Hjem</a></li>
+                <li><a href="/">Hjem</a></li>
                 <li><a href="#">Produkter</a></li>
-                <li><a href="/Python_webbutikk/templates/OmOss.html">Om oss</a></li>
-                <li><a href="/Python_webbutikk/templates/Kontakt.html">Kontakt</a></li>
+                <li><a href="/OmOss">Om oss</a></li>
+                <li><a href="/Kontakt">Kontakt</a></li>
             </ul>
-            <a href="checkout.html"><button class="cart-btn">🛒</button></a>
+            <a href="/checkout"><button class="cart-btn">🛒</button></a>
         </nav>
     </header>
 
@@ -30,42 +30,42 @@
             <div class="product-grid">
 
                 <div class="product">
-                    <img src="/Bilder/Svartflaske2.png" alt="Trenings Flaske">
+                    <img src="./static/bilder/Svartflaske2.png" alt="Trenings Flaske">
                     <h3>Trenings Flaske</h3>
                     <p>Robust flaske med 1L kapasitet.</p>
                     <span class="price">kr 349</span>
                     <button class="buy-btn"
                         data-name="Trenings Flaske"
                         data-price="349"
-                        data-img="/Bilder/Svartflaske2.png"
+                        data-img="./static/bilder/Svartflaske2.png"
                     >
                         Legg i handlekurv
                     </button>
                 </div>
 
                 <div class="product">
-                    <img src="/Bilder/Compression shirt.webp" alt="Compression shirt">
+                    <img src="./static/bilder/Compression shirt.webp" alt="Compression shirt">
                     <h3>Compression Shirt</h3>
                     <p>Pustende og tettsittende for maks støtte.</p>
                     <span class="price">kr 499</span>
                     <button class="buy-btn"
                         data-name="Compression Shirt"
                         data-price="499"
-                        data-img="/Bilder/Compression shirt.webp"
+                        data-img="./static/bilder/Compression shirt.webp"
                     >
                         Legg i handlekurv
                     </button>
                 </div>
 
                 <div class="product">
-                    <img src="/Bilder/Lifting straps.png" alt="Lifting straps">
+                    <img src="./static/bilder/Lifting straps.png" alt="Lifting straps">
                     <h3>Lifting Straps</h3>
                     <p>Ekstra grep til tunge løft.</p>
                     <span class="price">kr 299</span>
                     <button class="buy-btn"
                         data-name="Lifting Straps"
                         data-price="299"
-                        data-img="/Bilder/Lifting straps.png"
+                        data-img="./static/bilder/Lifting straps.png"
                     >
                         Legg i handlekurv
                     </button>
@@ -79,6 +79,6 @@
         <p>© 2025 IronCore. Alle rettigheter reservert.</p>
     </footer>
 
-    <script src="/Python_webbutikk/static/cart.js"></script>
+    <script src="./static/cart.js"></script>
 </body>
 </html>
